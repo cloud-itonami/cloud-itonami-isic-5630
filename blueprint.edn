@@ -1,0 +1,12 @@
+[{:itonami.blueprint/id "cloud-itonami-isic-5630"
+  :itonami.blueprint/name "Beverage Serving Activities"
+  :itonami.blueprint/isic-rev4 "5630"
+  :itonami.blueprint/domain :services/beverage-serving
+  :itonami.blueprint/license "AGPL-3.0-or-later"
+  :itonami.blueprint/social-impact [:guest-safety :responsible-service-support :staff-coordination :community-hospitality]
+  :itonami.blueprint/governor :beverage-service-governor
+  :itonami.blueprint/robotics false
+  :itonami.blueprint/required-technologies [:identity :forms :dmn :bpmn :audit-ledger]
+  :itonami.blueprint/status :public-oss
+  :itonami.blueprint/maturity :implemented
+  :db/id -1}]
