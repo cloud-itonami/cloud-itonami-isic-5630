@@ -78,7 +78,7 @@
     - `:coordinate-supply-order` above `supply-cost-threshold` --
       ALWAYS escalates to a human, regardless of confidence, so a
       large procurement commitment is never auto-committed silently."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [beverageops.store :as store]))
 
 (def confidence-floor 0.6)
@@ -150,7 +150,7 @@
   "Flatten every advisor-authored field on a proposal into one
   lower-cased blob the RSA-decision scan checks."
   [proposal]
-  (str/lower-case (pr-str (select-keys proposal [:op :summary :rationale :cites :value]))))
+  (str/lower (pr-str (select-keys proposal [:op :summary :rationale :cites :value]))))
 
 (defn- rsa-decision-violations
   "HARD, PERMANENT block: a proposal outside the closed op allowlist,
