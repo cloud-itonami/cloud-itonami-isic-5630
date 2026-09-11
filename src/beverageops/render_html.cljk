@@ -9,7 +9,7 @@
   `beverageops.advisor` -> `beverageops.governor` ->
   `beverageops.phase` -> `beverageops.store` -- through a scenario that
   is a superset of this repo's own `beverageops.sim` demo driver
-  (`clojure -M:dev:run`, which was run and read BEFORE this file was
+  (`kbb -M:dev:run`, which was run and read BEFORE this file was
   written: its venue ids `venue-1`/`venue-3`/`venue-99` do line up with
   `beverageops.store/demo-data`, so it was safe to build on).
 
@@ -33,7 +33,7 @@
   vector, so counting holds alone would be satisfied by a run in which
   the governor never actually refused anything -- hence the two stages.
 
-  Usage: `clojure -M:dev:render-html [out-file]`
+  Usage: `kbb -M:dev:render-html [out-file]`
   (default `docs/samples/operator-console.html`)."
   (:require [clojure.java.io :as io]
             [kotoba.lang.text :as str]
@@ -624,7 +624,7 @@
      "<main>\n"
      "  <section class=\"card\">\n"
      "    <h2>このページについて</h2>\n"
-     "    <p>ビルド時に <code>clojure -M:dev:render-html</code> が実 actor スタック "
+     "    <p>ビルド時に <code>kbb -M:dev:render-html</code> が実 actor スタック "
      "(<code>beverageops.operation</code> → <code>beverageops.advisor</code> → "
      "<code>beverageops.governor</code> → <code>beverageops.phase</code> → "
      "<code>beverageops.store</code>) を実際に走らせ、その出力だけを描画した静的成果物。"
