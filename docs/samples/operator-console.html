@@ -2473,7 +2473,7 @@ img,svg { max-width: 100%; height: auto; }</style>
 <main>
   <section class="card">
     <h2>このページについて</h2>
-    <p>ビルド時に <code>clojure -M:dev:render-html</code> が実 actor スタック (<code>beverageops.operation</code> → <code>beverageops.advisor</code> → <code>beverageops.governor</code> → <code>beverageops.phase</code> → <code>beverageops.store</code>) を実際に走らせ、その出力だけを描画した静的成果物。id・数値・違反理由・承認者はすべてその実行の actor / store 出力から読み出しており、手入力のサンプル値は 1 つも含まない。store から取れない値は書かずに「取れない」と明示する (下の「承認者の帰属」節)。</p>
+    <p>ビルド時に <code>kbb -M:dev:render-html</code> が実 actor スタック (<code>beverageops.operation</code> → <code>beverageops.advisor</code> → <code>beverageops.governor</code> → <code>beverageops.phase</code> → <code>beverageops.store</code>) を実際に走らせ、その出力だけを描画した静的成果物。id・数値・違反理由・承認者はすべてその実行の actor / store 出力から読み出しており、手入力のサンプル値は 1 つも含まない。store から取れない値は書かずに「取れない」と明示する (下の「承認者の帰属」節)。</p>
     <p class="muted">決定的: 本文に時刻を持たず、同じシードからの再生成は byte 一致する。</p>
   </section>
   <section class="card">
