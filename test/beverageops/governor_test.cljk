@@ -2,7 +2,7 @@
   "Pure unit tests of `beverageops.governor/check` against hand-built
   proposals -- the fast, focused complement to `governor-contract-test`'s
   full-graph integration coverage."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [beverageops.governor :as gov]
             [beverageops.store :as store]))
 
