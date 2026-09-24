@@ -1,6 +1,6 @@
 (ns beverageops.store-contract-test
   "Contract tests for `beverageops.store/Store` protocol."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [beverageops.store :as store]))
 
 (deftest mem-store-venue-lookup

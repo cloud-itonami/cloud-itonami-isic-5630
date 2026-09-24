@@ -1,6 +1,6 @@
 (ns beverageops.phase-test
   "Unit tests of `beverageops.phase` rollout logic."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [beverageops.phase :as phase]))
 
 (def clean-verdict {:hard? false :escalate? false})
