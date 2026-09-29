@@ -16,7 +16,7 @@
        io.github.kotoba-lang/langgraph
         {:git/sha "a332a770a0d2b5193f81b54483bb954fb29ef8d7"}
         ;; jp-go-dds (デジタル庁デザインシステム) -- the workspace's BASE
-        ;; design system (com-junkawasaki/root CLAUDE.md, ADR-2607141915).
+        ;; design system (com-junkawasaki/root AGENTS.md, ADR-2607141915).
         ;; `beverageops.render-html` styles the generated operator console
         ;; with `jp-go-dds.skin/dds+skin`; nothing else in this repo depends
         ;; on it. Consumed by :git/sha (never :local/root -- a :local/root
